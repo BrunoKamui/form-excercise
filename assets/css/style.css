@@ -1,0 +1,140 @@
+* {
+    font-family:Arial;
+}
+
+body {
+    margin:0;
+    padding:0;
+    background-color:#ddd;
+}
+
+header {
+    display:flex;
+    justify-content:center;
+    height:90px;
+}
+
+header .container {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-end;
+    width:990px;
+    background-color:#1e9eaf;
+}
+
+h1 {
+    margin:10px 0px 0px 0px;
+    color:#fff;
+}
+
+#ref {
+    display:flex;
+    margin:5px;
+    align-self:flex-end;
+    text-decoration:none;
+    color:#1e9eaf;
+}
+
+#ref:hover {
+    color:#fff;
+}
+
+#main {
+    display:flex;
+    justify-content:center;
+}
+
+.container {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    width:990px;
+    background-color:#fff;
+}
+
+.form_area {
+    display:flex;
+    flex-direction:column;
+    width:350px;
+    margin:50px 0px;
+}
+
+.form_group {
+    display:flex;
+    flex-direction:column;
+    line-height:25px;
+    margin-bottom:20px;
+}
+
+input, select {
+    border:1px solid #ccc;
+    background-color:#cceff3;
+    border-radius:5px;
+    padding:0px 10px;
+    height:35px;
+}
+
+.short_field {
+    width:150px;
+}
+
+select {
+    height:37px;
+    width:fit-content;
+}
+
+/*Focus serve para alterar coisas quando a pessoa clica no campo*/
+input:focus, select:focus {
+    outline:none;
+    border:1px solid #1e9eaf;
+}
+
+/*Isso serve para remover as setinhas para form de números*/
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance:none;
+    margin:0;
+}
+
+.form_buttons {
+    display:flex;
+    flex-direction:row-reverse;
+    justify-content:space-between;
+}
+
+button {
+    border:1px solid #ccc;
+    background-color:#1e9eaf;
+    border-radius:5px;
+    color:#fff;
+    padding:0px 10px;
+    margin-top:27px;
+    font-size:14px;
+    height:35px;
+}
+
+button:focus {
+    outline:none;
+    border:1px solid #444;
+}
+
+@media (max-width:765px) {
+    #main .container {
+        display:flex;
+        flex-direction:column;
+    }
+    .form_area {
+        margin:10px 10px 10px 10px;
+    }    
+}
+
+@media (max-width:320px) {
+    #main .container {
+        display:flex;
+        flex-direction:column;
+    }
+    .form_area {
+        width:300px;
+        margin:10px 10px 10px 10px;
+    }    
+}

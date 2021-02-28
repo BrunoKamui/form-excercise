@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <title>Formulário</title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>Formulário Geral</h1>
+        <a id="ref" href="/assets/images/reference.png" target="_blank">Reference</a>
+    </div>
+</header>
+</body>
+<section id="main">
+    <div class="container">
+        <div class="form_area">
+            <form>
+                <div class="form_group">
+                    <lable>Nome Completo:</lable>
+                    <input type="text" name="name" placeholder="Nome Completo"/>
+                </div>
+                <div class="form_group">
+                    <lable>Data de Nascimento:</lable>
+                    <input type="date" name="nascimento" class="short_field"/>
+                </div>
+                <div class="form_group">
+                    <lable>RG:</lable>
+                    <input type="number" name="rg" placeholder="00.000.000" class="short_field"/>
+                </div>
+                <div class="form_group">
+                    <lable>CPF:</lable>
+                    <input type="number" name="cpf" placeholder="00.000.000-00" class="short_field"/>
+                </div>
+                <div class="form_group">
+                    <lable>Pai:</lable>
+                    <input type="text" name="pai" placeholder="Nome do Pai"/>
+                </div>
+                <div class="form_group">
+                    <lable>Mãe:</lable>
+                    <input type="text" name="mae" placeholder="Nome da Mãe"/>
+                </div>
+            </form>
+        </div>
+        <div class="form_area">
+            <form>
+                <div class="form_group">
+                    <lable>Escolaridade:</lable>
+                    <select name="escolaridade">
+                        <option value="">Selecione</option>
+                        <option value="fundamental">Fundamental</option>
+                        <option value="ensino_medio">Ensino Médio</option>
+                        <option value="superior">Superior</option>
+                        <option value="pos_graduação">Pós-Graduação</option>
+                        <option value="mestrado">Mestrado</option>
+                        <option value="douturado">Douturado</option>
+                    </select>
+                </div>
+                <div class="form_group">
+                    <lable>Profissão:</lable>
+                    <input type="text" name="profissao" placeholder="Profissão"/>
+                </div>
+                <div class="form_group">
+                    <lable>Telefone:</lable>
+                    <input type="tel" name="tel" placeholder="(00)0000-0000" class="short_field"/>
+                </div>
+                <div class="form_group">
+                    <lable>Celular:</lable>
+                    <input type="number" name="celular" placeholder="(00)0000-0000" class="short_field"/>
+                </div>
+                <div class="form_group">
+                    <lable>E-mail:</lable>
+                    <input type="email" name="email" placeholder="seu@email.com"/>
+                </div>
+                <div class="form_buttons">
+                    <button type="submit" name="cadastrar">Cadastrar</button>
+                    <button type="reset" name="reset">Limpar Campos</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+</html>
